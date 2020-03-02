@@ -1,0 +1,10 @@
+class Circle
+!!!128642.cpp!!!	print(inout out : ostream, in a : int) : void
+    if(a == 1){
+    out<<"<circle cx=\""<<this->getCoordX()<<"\" cy=\""<<this->getCoordY()<<"\" r=\""
+       <<this->getSize()<<"\" "<<"fill=\"green\" />";
+    }
+    else{
+        out<<"<circle cx=\""<<this->getCoordX()<<"\" cy=\""<<this->getCoordY()<<"\" r=\""
+            <<this->getSize()<<"\" "<<"fill=\"red\" />";   
+    }

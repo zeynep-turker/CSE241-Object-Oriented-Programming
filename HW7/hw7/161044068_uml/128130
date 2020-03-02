@@ -1,0 +1,2804 @@
+format 221
+"src" // 161044068_CSE241_HW7::src
+  revision 2
+  modified_by 2 "zeyne"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "C:/Users/zeyne/Desktop/161044068_CSE241_HW7/src/"
+  classview 128002 "src"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 128002 "Circle"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128130 // <realization>
+	relation 128130 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128130 // <realization>
+	  b parent class_ref 128130 // Shape
+      end
+
+      attribute 128002 "PI"
+	class_attribute const_attribute private explicit_type "double"
+	init_value " 3.141818"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128130 "line"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128258 "coordx"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128386 "coordy"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 128642 "Circle"
+	public explicit_return_type ""
+	nparams 0
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128770 "Circle"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "size" explicit_type "int"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param size dairenin yaricapidir.
+@throws IllegalArgumentException size a negatif bir sayi girildiginde firlatilir.
+"
+      end
+
+      operation 128898 "Circle"
+	public explicit_return_type ""
+	nparams 3
+	  param in name "size" explicit_type "int"
+	  param in name "coordx" explicit_type "double"
+	  param in name "coordy" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+
+@param size dairenin yaricapidir.
+@param coordx dairenin x coordinatidir.
+@param coordy dairenin y coordinatidir.
+@throws IllegalArgumentException size ya da coordinatlara negatif bir sayi girildiginde firlatilir.
+"
+      end
+
+      operation 129026 "getSize"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Dairenin yaricapini return eder.
+"
+      end
+
+      operation 129154 "getCoordx"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Dairenin x coordinatini return eder.
+"
+      end
+
+      operation 129282 "getCoordy"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return  Dairenin y coordinatini return eder.
+"
+      end
+
+      operation 129410 "setSize"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "size" explicit_type "int"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param size Dairenin yaricapidir.
+@throws IllegalArgumentException Size negatif bir sayi girilirse bu
+exception firlatilir.
+"
+      end
+
+      operation 129538 "setCoordx"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "coordx" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param coordx Dairenin x coordinatidir.
+@throws IllegalArgumentException coordx negatif bir sayi girilirse bu
+exception firlatilir.
+"
+      end
+
+      operation 129666 "setCoordy"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "coordy" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param coordy Dairenin y coordinatidir.
+@throws IllegalArgumentException coordy negatif bir sayi girilirse bu
+exception firlatilir.
+"
+      end
+
+      operation 129794 "setCoord"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "coordx" explicit_type "double"
+	  param in name "coordy" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param coordx Dairenin x coordinatidir.
+@param coordy Dairenin y coordinatidir
+@throws IllegalArgumentException coordinatlar negatif bir sayi girilirse bu
+exception firlatilir.
+"
+      end
+
+      operation 129922 "area"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Dairenin alani return edilir.
+"
+      end
+
+      operation 130050 "perimeter"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Dairenin çevresi return edilir.
+"
+      end
+
+      operation 130178 "increment"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Dairenin coordinatlari 1.0 artirilir.
+"
+      end
+
+      operation 130306 "decrement"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " Dairenin coordinatlari 1.0 azaltilir.
+"
+      end
+
+      operation 130434 "Draw"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "draw" explicit_type "Graphics"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Daire cizilir.
+@param draw Graphics tipinde bir degisken
+"
+      end
+
+      operation 130562 "compareTo"
+	public explicit_return_type "int"
+	nparams 1
+	  param inout name "o" type class_ref 128130 // Shape
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Dairenin alanı gelen shapin alanıyla karşılaştilir.
+@param o Shape objesi
+@return Gelen objenin alani bu objeden buyukse -1,esitlerse 0
+gelen objenin alani bu objeden kucukse 1 return edilir.
+"
+      end
+    end
+
+    class 128130 "Shape"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Butun shape lerin icerdigi methodlara sahipdir.
+"
+      classrelation 128002 // <realization>
+	relation 128002 -_-|>
+	  a public
+	    java "${type}<Shape>"
+	    classrelation_ref 128002 // <realization>
+	  b parent class_ref 128258 // Comparable
+      end
+
+      operation 128002 "area"
+	public explicit_return_type "double"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128130 "perimeter"
+	public explicit_return_type "double"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128258 "increment"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128386 "decrement"
+	public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128514 "Draw"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "draw" explicit_type "Graphics"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 128386 "ComposedShape"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings(\"serial\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128258 // <generalisation>
+	relation 128258 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128258 // <generalisation>
+	  b parent class_ref 128514 // JPanel
+      end
+
+      classrelation 128386 // <realization>
+	relation 128386 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128386 // <realization>
+	  b parent class_ref 128130 // Shape
+      end
+
+      classrelation 128514 // Outer (<unidirectional association>)
+	relation 128514 --->
+	  a role_name "Outer" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128514 // Outer (<unidirectional association>)
+	  b parent class_ref 128130 // Shape
+      end
+
+      classrelation 128642 // Inner (<unidirectional association>)
+	relation 128642 --->
+	  a role_name "Inner" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128642 // Inner (<unidirectional association>)
+	  b parent class_ref 128130 // Shape
+      end
+
+      classrelation 128770 // shapes (<unidirectional association>)
+	relation 128770 --->
+	  stereotype "ArrayList"
+	  a role_name "shapes" init_value " new ArrayList<Shape>()" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 128770 // shapes (<unidirectional association>)
+	  b parent class_ref 128130 // Shape
+      end
+
+      attribute 128514 "outer"
+	private explicit_type "char"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128642 "inner"
+	private explicit_type "char"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 130690 "ComposedShape"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128642 // Rectangle
+	  param inout name "inner" type class_ref 128642 // Rectangle
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130818 "ComposedShape"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128642 // Rectangle
+	  param inout name "inner" type class_ref 128002 // Circle
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130946 "ComposedShape"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128642 // Rectangle
+	  param inout name "inner" type class_ref 128770 // Triangle
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131074 "ComposedShape"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128002 // Circle
+	  param inout name "inner" type class_ref 128642 // Rectangle
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131202 "ComposedShape"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128002 // Circle
+	  param inout name "inner" type class_ref 128002 // Circle
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131330 "ComposedShape"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128002 // Circle
+	  param inout name "inner" type class_ref 128770 // Triangle
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131458 "ComposedShape"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128770 // Triangle
+	  param inout name "inner" type class_ref 128642 // Rectangle
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131586 "ComposedShape"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128770 // Triangle
+	  param inout name "inner" type class_ref 128002 // Circle
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131714 "ComposedShape"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128770 // Triangle
+	  param inout name "inner" type class_ref 128770 // Triangle
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131842 "getArrayList"
+	public return_type class_ref 128130 // Shape
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}ArrayList<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Shape tutan bir ArrayList return edilir.
+"
+      end
+
+      operation 131970 "area"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132098 "perimeter"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132226 "increment"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132354 "decrement"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132482 "Draw"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "draw" explicit_type "Graphics"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132610 "compareTo"
+	public explicit_return_type "int"
+	nparams 1
+	  param inout name "o" type class_ref 128130 // Shape
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132738 "optimalFit"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "ice ice sekilleri bir ArrayListe toplar.
+"
+      end
+    end
+
+    class 128642 "Rectangle"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings(\"serial\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      associated_diagram classdiagram_ref 128002 // hw7_diagram
+      classrelation 130050 // <generalisation>
+	relation 130050 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 130050 // <generalisation>
+	  b parent class_ref 128514 // JPanel
+      end
+
+      classrelation 130178 // <realization>
+	relation 130178 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 130178 // <realization>
+	  b parent class_ref 128130 // Shape
+      end
+
+      attribute 131202 "width"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131330 "height"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131458 "coordx"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131586 "coordy"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 139138 "Rectangle"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 139266 "Rectangle"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 139394 "Rectangle"
+	public explicit_return_type ""
+	nparams 4
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	  param in name "coordx" explicit_type "double"
+	  param in name "coordy" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param width Dikdortgenin uzun kenaridir.
+@param height Dikdortgenin kisa kenaridir.
+@param coordx Dikdortgenin x coordinatidir.
+@param coordy Dikdortgenin y coordinatidir.
+@throws IllegalArgumentException Dikdortgenin kenarlari ve coordinatlari sifirdan kucuk
+olamayacagi icin bu exception firlatilir.
+"
+      end
+
+      operation 139522 "getHeight"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Dikdortgenin kisa kenari return edilir.
+"
+      end
+
+      operation 139650 "getWidth"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Dikdortgenin uzun kenari return edilir.
+"
+      end
+
+      operation 139778 "getCoordx"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Dikdortgenin x coordinati return edilir.
+"
+      end
+
+      operation 139906 "getCoordy"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return  Dikdortgenin y coordinati return edilir.
+"
+      end
+
+      operation 140034 "setHeight"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "height" explicit_type "int"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param height int tipinde bir degisken.
+@throws IllegalArgumentException Dikdortgenin kenari sifirdan kucuk olamayacagi icin
+bu exception firlatilir.
+"
+      end
+
+      operation 140162 "setWidth"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "width" explicit_type "int"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param width int tipinde bir degisken.
+@throws IllegalArgumentException Dikdortgenin kenari sifirdan kucuk olamayacagi icin
+bu exception firlatilir.
+"
+      end
+
+      operation 140290 "setCoordx"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "coordx" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param coordx double tipinde bir degisken
+@throws IllegalArgumentException Dikdortgenin koordinatlari sifirdan kucuk olamayacagi icin
+bu exception firlatilir.
+"
+      end
+
+      operation 140418 "setCoordy"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "coordy" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param coordy double tipinde bir degisken
+@throws IllegalArgumentException Dikdortgenin koordinatlari sifirdan kucuk olamayacagi icin
+bu exception firlatilir.
+"
+      end
+
+      operation 140546 "setCoord"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "coordx" explicit_type "double"
+	  param in name "coordy" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param coordx double tipinde bir degisken
+@param coordy doubles tipinde bir degisken
+@throws IllegalArgumentException Dikdortgenin koordinatlari sifirdan kucuk olamayacagi icin
+bu exception firlatilir.
+"
+      end
+
+      operation 140674 "area"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Dikdortgenin alani return ediilir.
+"
+      end
+
+      operation 140802 "perimeter"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return  Dikdortgenin cevresi return ediilir.
+"
+      end
+
+      operation 140930 "increment"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Dikdortgenin koordinatlari 1.0 kadar artirilir.
+"
+      end
+
+      operation 141058 "decrement"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Dikdortgenin koordinatlari 1.0 kadar azaltilit.
+"
+      end
+
+      operation 141186 "Draw"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "draw" explicit_type "Graphics"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "dikdortgen cizilir.
+@param draw Graphics tipinde bir degiskendir.
+"
+      end
+
+      operation 141314 "compareTo"
+	public explicit_return_type "int"
+	nparams 1
+	  param inout name "o" type class_ref 128130 // Shape
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+Dikdortgenin alanı gelen shapin alanıyla karşılaştilir.
+@param o Shape objesi
+@return Gelen objenin alani bu objeden buyukse -1,esitlerse 0
+gelen objenin alani bu objeden kucukse 1 return edilir.
+"
+      end
+    end
+
+    class 128770 "Triangle"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 130306 // <realization>
+	relation 130306 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 130306 // <realization>
+	  b parent class_ref 128130 // Shape
+      end
+
+      attribute 131714 "line"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131842 "coordx1"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131970 "coordx2"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132098 "coordx3"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132226 "coordy1"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132354 "coordy2"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132482 "coordy3"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 141442 "Triangle"
+	public explicit_return_type ""
+	nparams 0
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 141570 "Triangle"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "size" explicit_type "int"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param size Ucgenin kenar uzunlugudur.
+@throws IllegalArgumentException Gelen size negatif bir degerse bu exception firlatilir.
+"
+      end
+
+      operation 141698 "Triangle"
+	public explicit_return_type ""
+	nparams 7
+	  param in name "size" explicit_type "int"
+	  param in name "coordx1" explicit_type "double"
+	  param in name "coordy1" explicit_type "double"
+	  param in name "coordx2" explicit_type "double"
+	  param in name "coordy2" explicit_type "double"
+	  param in name "coordx3" explicit_type "double"
+	  param in name "coordy3" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}, ${t5} ${p5}, ${t6} ${p6}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param size Ucgenin kenar uzunlugudur.
+@param coordx1 Ucgenin 1. x coordinatidir.
+@param coordy1 Ucgenin 1. y coordinatidir.
+@param coordx2 Ucgenin 2. x coordinatidir.
+@param coordy2 Ucgenin 2. y coordinatidir.
+@param coordx3 Ucgenin 3. x coordinatidir.
+@param coordy3 Ucgenin 3. y coordinatidir.
+@throws IllegalArgumentException Ucgenin kenar uzunlugu ve coordinatlari sifirdan kucuk olamayacagi icin
+bu exception firlatilir.
+"
+      end
+
+      operation 141826 "getSize"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Ucgenin kenar uzunlugu return edilir.
+"
+      end
+
+      operation 141954 "getCoordx1"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 142082 "getCoordx2"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 142210 "getCoordx3"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 142338 "getCoordy1"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 142466 "getCoordy2"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 142594 "getCoordy3"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 142722 "setSize"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "line" explicit_type "int"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param line Ucgenin kenar uzunlugudur.
+@throws IllegalArgumentException Ucgenin kenar uzunlugu sifirdan kucuk olamayacagi
+icin bu exception firlatilir.
+"
+      end
+
+      operation 142850 "setCoord1"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "coordx" explicit_type "double"
+	  param in name "coordy" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param coordx Ucgenin 1. x coordinatidir.
+@param coordy Ucgenin 1. y coordinatidir.
+@throws IllegalArgumentException Ucgenin koordinatlari sifir olamayaci icin
+bu exception firlatilir.
+"
+      end
+
+      operation 142978 "setCoord2"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "coordx" explicit_type "double"
+	  param in name "coordy" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param coordx Ucgenin 2. x coordinatidir.
+@param coordy Ucgenin 2. y coordinatidir.
+@throws IllegalArgumentException Ucgenin koordinatlari sifir olamayaci icin
+bu exception firlatilir.
+"
+      end
+
+      operation 143106 "setCoord3"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "coordx" explicit_type "double"
+	  param in name "coordy" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param coordx Ucgenin 3. x coordinatidir.
+@param coordy Ucgenin 3. y coordinatidir.
+@throws IllegalArgumentException  Ucgenin koordinatlari sifir olamayaci icin
+bu exception firlatilir.
+"
+      end
+
+      operation 143234 "area"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Ucgenin alani return  edilir.
+"
+      end
+
+      operation 143362 "perimeter"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Ucgenin cevresi return edilir.
+"
+      end
+
+      operation 143490 "increment"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Ucgenin koordinatlari 1.0 kadar artirilir.
+"
+      end
+
+      operation 143618 "decrement"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Ucgenin koordinatlari 1.0 kadar azaltilir.
+"
+      end
+
+      operation 143746 "Draw"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "draw" explicit_type "Graphics"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Ucgen cizilir.
+@param draw Graphics tipinde bir degisken
+"
+      end
+
+      operation 143874 "compareTo"
+	public explicit_return_type "int"
+	nparams 1
+	  param inout name "o" type class_ref 128130 // Shape
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+Ucgenin alanı gelen shapin alanıyla karşılaştilir.
+@param o Shape objesi
+@return Gelen objenin alani bu objeden buyukse -1,esitlerse 0
+gelen objenin alani bu objeden kucukse 1 return edilir.
+"
+      end
+    end
+
+    class 128898 "hw7"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 128770 "frame"
+	private explicit_type "JFrame"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 132866 "main"
+	class_operation public explicit_return_type "void"
+	nparams 1
+	  param inout name "args" explicit_type "String"
+	multiplicity "[]"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0}[] ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132994 "hw7"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 133122 "initialize"
+	private explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 133250 "sortAll"
+	class_operation public explicit_return_type "void"
+	nparams 1
+	  param inout name "shape" explicit_type "ArrayList<Shape>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 133378 "convertAll"
+	class_operation public return_type class_ref 129026 // Polygon
+	nparams 1
+	  param inout name "shape" explicit_type "ArrayList<Shape>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}ArrayList<${type}> ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 133506 "tests"
+	class_operation private explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 129026 "Polygon"
+      abstract visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      associated_diagram classdiagram_ref 128002 // hw7_diagram
+      classrelation 128898 // <realization>
+	relation 128898 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128898 // <realization>
+	  b parent class_ref 128130 // Shape
+      end
+
+      attribute 128898 "h"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129026 "w"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129154 "x1"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129282 "y1"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129410 "x2"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129538 "x3"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129666 "y2"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129794 "y3"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 133634 "Polygon"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      class 129154 "Point2D"
+	visibility package 
+	cpp_decl ""
+	java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	attribute 129922 "x"
+	  private explicit_type "double"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	attribute 130050 "y"
+	  private explicit_type "double"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	operation 133762 "Point2D"
+	  public explicit_return_type ""
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 133890 "getCoordX"
+	  public explicit_return_type "double"
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 134018 "getCoordY"
+	  public explicit_return_type "double"
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 134146 "setCoordX"
+	  public explicit_return_type "void"
+	  nparams 1
+	    param in name "CoordX" explicit_type "double"
+	  nexceptions 1
+	    explicit_exception "IllegalArgumentException"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 134274 "setCoordY"
+	  public explicit_return_type "void"
+	  nparams 1
+	    param in name "CoordY" explicit_type "double"
+	  nexceptions 1
+	    explicit_exception "IllegalArgumentException"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 134402 "setCoord"
+	  public explicit_return_type "void"
+	  nparams 2
+	    param in name "CoordX" explicit_type "double"
+	    param in name "CoordY" explicit_type "double"
+	  nexceptions 1
+	    explicit_exception "IllegalArgumentException"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+      end
+
+      operation 134530 "setCoord1"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "coordX" explicit_type "double"
+	  param in name "coordY" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134658 "setCoord2"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "coordX" explicit_type "double"
+	  param in name "coordY" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134786 "setCoord3"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "coordX" explicit_type "double"
+	  param in name "coordY" explicit_type "double"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134914 "setHeight"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "height" explicit_type "int"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135042 "setWidth"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "width" explicit_type "int"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135170 "getWidth"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135298 "getHeight"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135426 "getCoordX1"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135554 "getCoordY1"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135682 "getCoordX2"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135810 "getCoordY2"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135938 "getCoordX3"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136066 "getCoordY3"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136194 "absfunct"
+	abstract public explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136322 "increment"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136450 "decrement"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136578 "compareTo"
+	public explicit_return_type "int"
+	nparams 1
+	  param inout name "o" type class_ref 128130 // Shape
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 129282 "PolygonDyn"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 129026 // <generalisation>
+	relation 129026 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129026 // <generalisation>
+	  b parent class_ref 129026 // Polygon
+      end
+
+      attribute 130178 "PI"
+	class_attribute const_attribute private explicit_type "double"
+	init_value " 3.141818"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 129154 // p (<unidirectional association>)
+	relation 129154 --->
+	  a role_name "p" multiplicity "[]" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	    classrelation_ref 129154 // p (<unidirectional association>)
+	  b parent class_ref 129154 // Point2D
+      end
+
+      attribute 130306 "used"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130434 "capacity"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130562 "i"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130690 "angle"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 136706 "PolygonDyn"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "ilk atamalar yapilir.
+"
+      end
+
+      operation 136834 "PolygonDyn"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "num" explicit_type "int"
+	nexceptions 1
+	  explicit_exception "IllegalArgumentException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param num int bir degisken
+@throws IllegalArgumentException Array capacity sifirdan kucuk olamayacagi icin
+bu exception firlatilir.
+"
+      end
+
+      operation 136962 "PolygonDyn"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "x" explicit_type "double"
+	  param in name "y" explicit_type "double"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137090 "getUsed"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137218 "getCapacity"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137346 "getArray"
+	public return_type class_ref 129154 // Point2D
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type}[] ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137474 "convert"
+	public return_type class_ref 129154 // Point2D
+	nparams 1
+	  param inout name "shape" type class_ref 128130 // Shape
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type}[] ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param shape Shape tipli objedir.
+@return Point2D leri tutan Array return eder.
+"
+      end
+
+      operation 137602 "area"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137730 "perimeter"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137858 "Draw"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "draw" explicit_type "Graphics"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "public void print(ostream& out,int a)const{};
+public void printPolygon(ostream& out,vector<Shape*> v);"
+      end
+
+      operation 137986 "absfunct"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 129410 "PolygonVect"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 129282 // <generalisation>
+	relation 129282 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129282 // <generalisation>
+	  b parent class_ref 129026 // Polygon
+      end
+
+      attribute 130818 "PI"
+	class_attribute const_attribute private explicit_type "double"
+	init_value " 3.141818"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 129410 // a (<unidirectional association>)
+	relation 129410 --->
+	  a role_name "a" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129410 // a (<unidirectional association>)
+	  b parent class_ref 129154 // Point2D
+      end
+
+      classrelation 129538 // b (<unidirectional association>)
+	relation 129538 --->
+	  a role_name "b" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129538 // b (<unidirectional association>)
+	  b parent class_ref 129154 // Point2D
+      end
+
+      classrelation 129666 // c (<unidirectional association>)
+	relation 129666 --->
+	  a role_name "c" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129666 // c (<unidirectional association>)
+	  b parent class_ref 129154 // Point2D
+      end
+
+      classrelation 129794 // d (<unidirectional association>)
+	relation 129794 --->
+	  a role_name "d" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129794 // d (<unidirectional association>)
+	  b parent class_ref 129154 // Point2D
+      end
+
+      attribute 130946 "i"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131074 "angle"
+	private explicit_type "double"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 129922 // v (<unidirectional association>)
+	relation 129922 --->
+	  stereotype "ArrayList"
+	  a role_name "v" init_value " new ArrayList<Point2D>()" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 129922 // v (<unidirectional association>)
+	  b parent class_ref 129154 // Point2D
+      end
+
+      operation 138114 "PolygonVect"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 138242 "PolygonVect"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "x" explicit_type "double"
+	  param in name "y" explicit_type "double"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 138370 "getVect"
+	public return_type class_ref 129154 // Point2D
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}ArrayList<${type}> ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@return Point2D leri tutan  ArrayList return edilir.
+"
+      end
+
+      operation 138498 "convert"
+	public return_type class_ref 129154 // Point2D
+	nparams 1
+	  param inout name "shape" type class_ref 128130 // Shape
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}ArrayList<${type}> ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "
+@param shape Shapa tipinde bir objedir.
+@return Point2D leri tutan ArrayList return eder.
+"
+      end
+
+      operation 138626 "area"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 138754 "perimeter"
+	public explicit_return_type "double"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 138882 "Draw"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "draw" explicit_type "Graphics"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 139010 "absfunct"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    classdiagram 128002 "hw7_diagram"
+      classdiagramsettings member_max_width 0 end
+      size A2
+    end
+  end
+
+  deploymentview 128002 "src"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 128002 "Shape"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.awt.*;
+${definition}"
+      associated_elems
+	class_ref 128130 // Shape
+      end
+    end
+
+    artifact 128130 "Circle"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.awt.Graphics;
+${definition}"
+      associated_elems
+	class_ref 128002 // Circle
+      end
+    end
+
+    artifact 128258 "ComposedShape"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.awt.Color;
+import java.awt.Graphics;
+import java.util.ArrayList;
+import javax.swing.JPanel;
+${definition}"
+      associated_elems
+	class_ref 128386 // ComposedShape
+      end
+    end
+
+    artifact 128386 "hw7"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.awt.EventQueue;
+import java.awt.Graphics;
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import java.awt.Color;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.ArrayList;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+${definition}"
+      associated_elems
+	class_ref 128898 // hw7
+      end
+    end
+
+    artifact 128514 "Polygon"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 129026 // Polygon
+      end
+    end
+
+    artifact 128642 "PolygonDyn"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.awt.Graphics;
+${definition}"
+      associated_elems
+	class_ref 129282 // PolygonDyn
+      end
+    end
+
+    artifact 128770 "PolygonVect"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.awt.Graphics;
+import java.util.ArrayList;
+${definition}"
+      associated_elems
+	class_ref 129410 // PolygonVect
+      end
+    end
+
+    artifact 128898 "Rectangle"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.awt.Graphics;
+import javax.swing.JPanel;
+${definition}"
+      associated_elems
+	class_ref 128642 // Rectangle
+      end
+    end
+
+    artifact 129026 "Triangle"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.awt.Graphics;
+import java.awt.Polygon;
+${definition}"
+      associated_elems
+	class_ref 128770 // Triangle
+      end
+    end
+  end
+
+  classview 128258 "d"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+  end
+end

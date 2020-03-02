@@ -1,0 +1,1625 @@
+format 221
+"161044068_CSE241_HW5" // 161044068_CSE241_HW5
+  revision 2
+  modified_by 2 "zeyne"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "C:/Users/zeyne/Desktop/161044068_CSE241_HW5/"
+  cpp_src_dir "C:/Users/zeyne/Desktop/161044068_CSE241_HW5/"
+  classview 128002 "161044068_CSE241_HW5"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 128002 "Circle"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128002 // <generalisation>
+	relation 128002 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 128002 // <generalisation>
+	  b parent class_ref 128130 // Shape
+      end
+
+      operation 128002 "Circle"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}:Shape()${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Constructor"
+      end
+
+      operation 128130 "Circle"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "num" explicit_type "int"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}${)}:Shape(num)${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128258 "Circle"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 3
+	  param in name "num" explicit_type "int"
+	  param in name "coordX" explicit_type "double"
+	  param in name "coordY" explicit_type "double"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}:Shape(num,coordX,coordY)${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128386 "area"
+	const cpp_virtual cpp_override cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {return PI *(double)(this->getSize() * this->getSize());};
+"
+	
+	
+	
+	
+	comment "Virtual function"
+      end
+
+      operation 128514 "perimeter"
+	const cpp_virtual cpp_override cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return 2 * PI * this->getSize();};
+"
+	
+	
+	
+	
+      end
+
+      operation 128642 "print"
+	preserve_cpp_body_indent const cpp_virtual public explicit_return_type "void"
+	nparams 2
+	  param inout name "out" explicit_type "ostream"
+	  param in name "a" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 128130 "Shape"
+      abstract visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 136834 "Shape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}:line(100)${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Constructor"
+      end
+
+      operation 136962 "Shape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "size" explicit_type "int"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}${)}:line(size)${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137090 "Shape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 3
+	  param in name "size" explicit_type "int"
+	  param in name "coordX" explicit_type "double"
+	  param in name "coordY" explicit_type "double"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}:line(size),coordx(coordX),coordy(coordY)${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137218 "setSize"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "size" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Setter and Getter"
+      end
+
+      operation 137346 "setCoordX"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "coordX" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137474 "setCoordY"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "coordY" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137602 "setCoord1"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "coordX" explicit_type "double"
+	  param in name "coordY" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137730 "getSize"
+	const cpp_inline public explicit_return_type "int"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return line; };
+"
+	
+	
+	
+	
+      end
+
+      operation 137858 "getCoordX"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return coordx; };
+"
+	
+	
+	
+	
+      end
+
+      operation 137986 "getCoordY"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return coordy; };
+"
+	
+	
+	
+	
+      end
+
+      operation 138114 "area"
+	abstract const cpp_virtual public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+	comment "Pure virtual function"
+      end
+
+      operation 138242 "perimeter"
+	abstract const cpp_virtual public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 138370 "operator ++"
+	preserve_cpp_body_indent cpp_virtual public return_type class_ref 128130 // Shape
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Virtual function"
+      end
+
+      operation 138498 "operator ++"
+	preserve_cpp_body_indent cpp_virtual public return_type class_ref 128130 // Shape
+	nparams 1
+	  param in name "temp" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 138626 "operator --"
+	preserve_cpp_body_indent cpp_virtual public return_type class_ref 128130 // Shape
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 138754 "operator --"
+	preserve_cpp_body_indent cpp_virtual public return_type class_ref 128130 // Shape
+	nparams 1
+	  param in name "temp" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 138882 "operator =="
+	preserve_cpp_body_indent const public explicit_return_type "bool"
+	nparams 1
+	  param in name "otherShape" type class_ref 128130 // Shape
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139010 "operator !="
+	preserve_cpp_body_indent const public explicit_return_type "bool"
+	nparams 1
+	  param in name "otherShape" type class_ref 128130 // Shape
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139138 "print"
+	abstract preserve_cpp_body_indent const cpp_virtual public explicit_return_type "void"
+	nparams 2
+	  param inout name "out" explicit_type "ostream"
+	  param in name "a" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      attribute 129538 "line"
+	private explicit_type "int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129666 "coordx"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129794 "coordy"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 128258 "ComposedShape"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128130 // <generalisation>
+	relation 128130 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 128130 // <generalisation>
+	  b parent class_ref 128130 // Shape
+      end
+
+      operation 128770 "ComposedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128386 // Rectangle
+	  param inout name "inner" type class_ref 128386 // Rectangle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Constructors"
+      end
+
+      operation 128898 "ComposedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128386 // Rectangle
+	  param inout name "inner" type class_ref 128002 // Circle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129026 "ComposedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128386 // Rectangle
+	  param inout name "inner" type class_ref 128514 // Triangle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129154 "ComposedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128002 // Circle
+	  param inout name "inner" type class_ref 128386 // Rectangle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129282 "ComposedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128002 // Circle
+	  param inout name "inner" type class_ref 128002 // Circle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129410 "ComposedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128002 // Circle
+	  param inout name "inner" type class_ref 128514 // Triangle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129538 "ComposedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128514 // Triangle
+	  param inout name "inner" type class_ref 128386 // Rectangle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129666 "ComposedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128514 // Triangle
+	  param inout name "inner" type class_ref 128002 // Circle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129794 "ComposedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "outer" type class_ref 128514 // Triangle
+	  param inout name "inner" type class_ref 128514 // Triangle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129922 "getShapesVect"
+	const cpp_inline public explicit_return_type "vector<Shape*>"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return shapes; };
+"
+	
+	
+	
+	
+      end
+
+      operation 130050 "area"
+	const cpp_virtual cpp_override cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return this->area(); };
+"
+	
+	
+	
+	
+	comment "Virtual Function"
+      end
+
+      operation 130178 "perimeter"
+	const cpp_virtual cpp_override cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return this->perimeter(); };
+"
+	
+	
+	
+	
+      end
+
+      operation 130306 "print"
+	preserve_cpp_body_indent const cpp_virtual public explicit_return_type "void"
+	nparams 2
+	  param inout name "out" explicit_type "ostream"
+	  param in name "a" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130434 "optimalFit"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 128258 // rOuter (<unidirectional association>)
+	relation 128258 --->
+	  a role_name "rOuter" init_value "= nullptr" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${h_value};
+"
+	    classrelation_ref 128258 // rOuter (<unidirectional association>)
+	  b parent class_ref 128386 // Rectangle
+      end
+
+      classrelation 128386 // rInner (<unidirectional association>)
+	relation 128386 --->
+	  a role_name "rInner" init_value "= nullptr" private
+	    comment "mainden gelecek iç ve dış şeklin atanacaği private değişkenler."
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${h_value};
+"
+	    classrelation_ref 128386 // rInner (<unidirectional association>)
+	  b parent class_ref 128386 // Rectangle
+      end
+
+      classrelation 128514 // cOuter (<unidirectional association>)
+	relation 128514 --->
+	  a role_name "cOuter" init_value "= nullptr" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${h_value};
+"
+	    classrelation_ref 128514 // cOuter (<unidirectional association>)
+	  b parent class_ref 128002 // Circle
+      end
+
+      classrelation 128642 // cInner (<unidirectional association>)
+	relation 128642 --->
+	  a role_name "cInner" init_value "= nullptr" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${h_value};
+"
+	    classrelation_ref 128642 // cInner (<unidirectional association>)
+	  b parent class_ref 128002 // Circle
+      end
+
+      classrelation 128770 // tOuter (<unidirectional association>)
+	relation 128770 --->
+	  a role_name "tOuter" init_value "= nullptr" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${h_value};
+"
+	    classrelation_ref 128770 // tOuter (<unidirectional association>)
+	  b parent class_ref 128514 // Triangle
+      end
+
+      classrelation 128898 // tInner (<unidirectional association>)
+	relation 128898 --->
+	  a role_name "tInner" init_value "= nullptr" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${h_value};
+"
+	    classrelation_ref 128898 // tInner (<unidirectional association>)
+	  b parent class_ref 128514 // Triangle
+      end
+
+      classrelation 129026 // shapes (<unidirectional association>)
+	relation 129026 --->
+	  stereotype "vector"
+	  a role_name "shapes" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${stereotype}<${type}*> ${name}${value};
+"
+	    classrelation_ref 129026 // shapes (<unidirectional association>)
+	  b parent class_ref 128130 // Shape
+      end
+
+      classrelation 129154 // a (<unidirectional association>)
+	relation 129154 --->
+	  stereotype "vector"
+	  a role_name "a" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${stereotype}<${type}*> ${name}${value};
+"
+	    classrelation_ref 129154 // a (<unidirectional association>)
+	  b parent class_ref 128130 // Shape
+      end
+
+      classrelation 136450 // <unidirectional association>
+	relation 136450 --->
+	  a role_name "" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 136450 // <unidirectional association>
+	  b parent class_ref 128514 // Triangle
+      end
+    end
+
+    class 128386 "Rectangle"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 129794 // <generalisation>
+	relation 129794 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 129794 // <generalisation>
+	  b parent class_ref 128130 // Shape
+      end
+
+      operation 135810 "Rectangle"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}:Shape(),height(50)${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Constructor"
+      end
+
+      operation 135938 "Rectangle"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param in name "w" explicit_type "int"
+	  param in name "h" explicit_type "int"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}:Shape(w),height(h)${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136066 "Rectangle"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 4
+	  param in name "w" explicit_type "int"
+	  param in name "h" explicit_type "int"
+	  param in name "coordX" explicit_type "double"
+	  param in name "coordY" explicit_type "double"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}:Shape(w,coordX,coordY),height(h)${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136194 "setHeight"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "h" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Setter and Getter"
+      end
+
+      operation 136322 "getHeight"
+	const cpp_inline public explicit_return_type "int"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return height; };
+"
+	
+	
+	
+	
+      end
+
+      operation 136450 "area"
+	const cpp_virtual cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return ((double)(this->getSize() * this->getHeight())); };
+"
+	
+	
+	
+	
+	comment "Virtual function"
+      end
+
+      operation 136578 "perimeter"
+	const cpp_virtual cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return ((double)((2.0*this->getSize()) + (2.0*getHeight()))); };
+"
+	
+	
+	
+	
+      end
+
+      operation 136706 "print"
+	preserve_cpp_body_indent const cpp_virtual public explicit_return_type "void"
+	nparams 2
+	  param inout name "out" explicit_type "ostream"
+	  param in name "a" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 129410 "height"
+	private explicit_type "int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 128514 "Triangle"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 129922 // <generalisation>
+	relation 129922 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 129922 // <generalisation>
+	  b parent class_ref 128130 // Shape
+      end
+
+      operation 139266 "Triangle"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}:Shape()${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Constructor"
+      end
+
+      operation 139394 "Triangle"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "line" explicit_type "int"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}${)}:Shape(line)${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139522 "Triangle"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 7
+	  param in name "line" explicit_type "int"
+	  param in name "x1" explicit_type "double"
+	  param in name "y1" explicit_type "double"
+	  param in name "x2" explicit_type "double"
+	  param in name "y2" explicit_type "double"
+	  param in name "x3" explicit_type "double"
+	  param in name "y3" explicit_type "double"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}, ${t4} ${p4}${v4}, ${t5} ${p5}${v5}, ${t6} ${p6}${v6}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}, ${t5} ${p5}, ${t6} ${p6}${)}:Shape(line,x1,y1)${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139650 "setCoord2"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "coordX" explicit_type "double"
+	  param in name "coordY" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Setter and Getter"
+      end
+
+      operation 139778 "setCoord3"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "coordX" explicit_type "double"
+	  param in name "coordY" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139906 "getCoordX2"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return coordx2; };
+"
+	
+	
+	
+	
+      end
+
+      operation 140034 "getCoordY2"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return coordy2; };
+"
+	
+	
+	
+	
+      end
+
+      operation 140162 "getCoordX3"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return coordx3; };
+"
+	
+	
+	
+	
+      end
+
+      operation 140290 "getCoordY3"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return coordy3; };
+"
+	
+	
+	
+	
+      end
+
+      operation 140418 "area"
+	const cpp_virtual cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return ((double)(this->getSize() *this->getSize())*sqrt(3.0)/4.0); };
+"
+	
+	
+	
+	
+	comment "Virtual function"
+      end
+
+      operation 140546 "perimeter"
+	const cpp_virtual cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return (3.0 * (double)(this->getSize()));};
+"
+	
+	
+	
+	
+      end
+
+      operation 140674 "print"
+	preserve_cpp_body_indent const cpp_virtual public explicit_return_type "void"
+	nparams 2
+	  param inout name "out" explicit_type "ostream"
+	  param in name "a" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140802 "operator ++"
+	preserve_cpp_body_indent cpp_override public return_type class_ref 128130 // Shape
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140930 "operator ++"
+	preserve_cpp_body_indent cpp_override public return_type class_ref 128130 // Shape
+	nparams 1
+	  param in name "temp" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 141058 "operator --"
+	preserve_cpp_body_indent cpp_override public return_type class_ref 128130 // Shape
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 141186 "operator --"
+	preserve_cpp_body_indent cpp_override public return_type class_ref 128130 // Shape
+	nparams 1
+	  param in name "temp" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 129922 "coordx2"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130050 "coordy2"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130178 "coordx3"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130306 "coordy3"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 128642 "IndexOutOfRangeException"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 129282 // <generalisation>
+	relation 129282 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 129282 // <generalisation>
+	  b parent class_ref 128770 // typedef1
+      end
+
+      operation 130562 "what"
+	const cpp_inline public explicit_return_type "char"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} * ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+      return \"Index out of range\";
+   };
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 128770 "typedef1"
+      visibility package stereotype "typedef" explicit_base_type "exception"
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    classdiagram 128002 "d"
+      classdiagramsettings draw_all_relations no member_max_width 0 end
+      size A0
+    end
+  end
+
+  deploymentview 128002 "161044068_CSE241_HW5"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 128002 "Circle"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128002 // Circle
+      end
+    end
+
+    artifact 128130 "ComposedShape"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128258 // ComposedShape
+      end
+    end
+
+    artifact 128258 "myExceptionClass"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128770 // typedef1
+	class_ref 128642 // IndexOutOfRangeException
+      end
+    end
+
+    artifact 128770 "Rectangle"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128386 // Rectangle
+      end
+    end
+
+    artifact 128898 "Shape"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128130 // Shape
+      end
+    end
+
+    artifact 129026 "Triangle"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128514 // Triangle
+      end
+    end
+
+    artifact 129154 "main"
+      stereotype "source"
+      cpp_src "int main(int argc, char** argv) {
+    try{
+    ofstream file;   
+    Rectangle *rect=new Rectangle(857,685);
+    Rectangle *rect2=new Rectangle(43,25); 
+    Triangle *tri=new Triangle(526);
+    Triangle *tri2=new Triangle(21);
+    Circle *circ=new Circle(475);
+    Circle *circ2=new Circle(18);
+   
+    cout<<endl<<endl;
+    //Pre Incrementing Overloading Test
+    cout<<\"********* Using Pre Incrementing Operator Overloading *********\"<<endl;
+    cout<<\"for rect :\"<<endl;
+    cout<<\"x = \"<<rect->getCoordX()<<\" y = \"<<rect->getCoordY()<<endl;
+    ++(*rect);
+    cout<<\"x = \"<<rect->getCoordX()<<\" y = \"<<rect->getCoordY()<<endl;
+    cout<<\"for circ :\"<<endl;
+    cout<<\"x = \"<<circ->getCoordX()<<\" y = \"<<circ->getCoordY()<<endl;
+    ++(*circ);
+    cout<<\"x = \"<<circ->getCoordX()<<\" y = \"<<circ->getCoordY()<<endl;
+    cout<<\"for tri :\"<<endl;
+    cout<<\"x1 = \"<<tri->getCoordX()<<\" y1 = \"<<tri->getCoordY()<<\" x2 = \"<<tri->getCoordX2()<<\" y2 \"<<tri->getCoordY2()<<\" x3 = \"<<tri->getCoordX3()<<\" y3 = \"<<tri->getCoordY3()<<endl;
+    ++(*tri);
+    cout<<\"x1 = \"<<tri->getCoordX()<<\" y1 = \"<<tri->getCoordY()<<\" x2 = \"<<tri->getCoordX2()<<\" y2 \"<<tri->getCoordY2()<<\" x3 = \"<<tri->getCoordX3()<<\" y3 = \"<<tri->getCoordY3()<<endl;
+    cout<<endl<<endl;
+    
+    //Post Incrementing Overloading Test
+    cout<<\"********* Using Post Incrementing Operator Overloading *********\"<<endl;
+    cout<<\"for rect :\"<<endl;
+    cout<<\"x = \"<<rect->getCoordX()<<\" y = \"<<rect->getCoordY()<<endl;
+    (*rect)++;
+    cout<<\"x = \"<<rect->getCoordX()<<\" y = \"<<rect->getCoordY()<<endl;
+    cout<<\"for circ :\"<<endl;
+    cout<<\"x = \"<<circ->getCoordX()<<\" y = \"<<circ->getCoordY()<<endl;
+    (*circ)++;
+    cout<<\"x = \"<<circ->getCoordX()<<\" y = \"<<circ->getCoordY()<<endl;
+    cout<<\"for tri :\"<<endl;
+    cout<<\"x1 = \"<<tri->getCoordX()<<\" y1 = \"<<tri->getCoordY()<<\" x2 = \"<<tri->getCoordX2()<<\" y2 \"<<tri->getCoordY2()<<\" x3 = \"<<tri->getCoordX3()<<\" y3 = \"<<tri->getCoordY3()<<endl;
+    (*tri)++;
+    cout<<\"x1 = \"<<tri->getCoordX()<<\" y1 = \"<<tri->getCoordY()<<\" x2 = \"<<tri->getCoordX2()<<\" y2 \"<<tri->getCoordY2()<<\" x3 = \"<<tri->getCoordX3()<<\" y3 = \"<<tri->getCoordY3()<<endl;   
+    cout<<endl<<endl;
+    
+    //Pre Decrementing Overloading Test--(*rect);
+    cout<<\"********* Using Pre Decrementing Operator Overloading *********\"<<endl;
+    cout<<\"for rect :\"<<endl;
+    cout<<\"x = \"<<rect->getCoordX()<<\" y = \"<<rect->getCoordY()<<endl;
+    --(*rect);
+    cout<<\"x = \"<<rect->getCoordX()<<\" y = \"<<rect->getCoordY()<<endl;
+    cout<<\"for circ :\"<<endl;
+    cout<<\"x = \"<<circ->getCoordX()<<\" y = \"<<circ->getCoordY()<<endl;
+    --(*circ);
+    cout<<\"x = \"<<circ->getCoordX()<<\" y = \"<<circ->getCoordY()<<endl;
+    cout<<\"for tri :\"<<endl;
+    cout<<\"x1 = \"<<tri->getCoordX()<<\" y1 = \"<<tri->getCoordY()<<\" x2 = \"<<tri->getCoordX2()<<\" y2 \"<<tri->getCoordY2()<<\" x3 = \"<<tri->getCoordX3()<<\" y3 = \"<<tri->getCoordY3()<<endl;
+    --(*tri);
+    cout<<\"x1 = \"<<tri->getCoordX()<<\" y1 = \"<<tri->getCoordY()<<\" x2 = \"<<tri->getCoordX2()<<\" y2 \"<<tri->getCoordY2()<<\" x3 = \"<<tri->getCoordX3()<<\" y3 = \"<<tri->getCoordY3()<<endl;
+    cout<<endl<<endl;
+    
+    //Post Decrementing Overloading Test
+    cout<<\"********* Using Post Decrementing Operator Overloading *********\"<<endl;
+    cout<<\"x = \"<<rect->getCoordX()<<\" y = \"<<rect->getCoordY()<<endl;
+    (*rect)--;
+    cout<<\"x = \"<<rect->getCoordX()<<\" y = \"<<rect->getCoordY()<<endl;
+    cout<<\"for circ :\"<<endl;
+    cout<<\"x = \"<<circ->getCoordX()<<\" y = \"<<circ->getCoordY()<<endl;
+    (*circ)--;
+    cout<<\"x = \"<<circ->getCoordX()<<\" y = \"<<circ->getCoordY()<<endl;
+    cout<<\"for tri :\"<<endl;
+    cout<<\"x1 = \"<<tri->getCoordX()<<\" y1 = \"<<tri->getCoordY()<<\" x2 = \"<<tri->getCoordX2()<<\" y2 \"<<tri->getCoordY2()<<\" x3 = \"<<tri->getCoordX3()<<\" y3 = \"<<tri->getCoordY3()<<endl;
+    (*tri)--;
+    cout<<\"x1 = \"<<tri->getCoordX()<<\" y1 = \"<<tri->getCoordY()<<\" x2 = \"<<tri->getCoordX2()<<\" y2 \"<<tri->getCoordY2()<<\" x3 = \"<<tri->getCoordX3()<<\" y3 = \"<<tri->getCoordY3()<<endl;
+    cout<<endl<<endl;
+    
+    //Area() and Perimeter() Function Test
+    cout<<\"********* Using area() and perimeter() Function *********\"<<endl;
+    cout<<\"rect's area => \"<<rect->area()<<endl;
+    cout<<\"circ's area => \"<<circ->area()<<endl;
+    cout<<\"tri's area => \"<<tri->area()<<endl;
+    
+    cout<<\"rect's perimeter => \"<<rect->perimeter()<<endl;
+    cout<<\"circ's perimeter => \"<<circ->perimeter()<<endl;
+    cout<<\"tri's perimeter => \"<<tri->perimeter()<<endl;
+    cout<<endl<<endl;
+    
+    //== and != Operator Overloading Test
+    cout<<\"********* Using == and != Operator Overloading *********\"<<endl;
+    if(rect->area() == circ->area())
+        cout<<\"Rect and Circ's areas are same..\"<<endl;
+    if(rect->area() != circ->area())
+        cout<<\"Rect and Circ's areas are not same..\"<<endl;
+    if(rect->perimeter() == circ->perimeter())
+        cout<<\"Rect and Circ's perimeters are same..\"<<endl;
+    if(rect->perimeter() != circ->perimeter())
+        cout<<\"Rect and Circ's perimeters are not same..\"<<endl;    
+    cout<<endl<<endl;
+    //<< Operator Overloading Test with ComposedShape  
+    ComposedShape *(cArr[9]);
+    cArr[0] = new ComposedShape(rect,rect2);
+    cArr[1] = new ComposedShape(rect,tri2);
+    cArr[2] = new ComposedShape(rect,circ2);
+    cArr[3] = new ComposedShape(tri,rect2);
+    cArr[4] = new ComposedShape(tri,tri2);
+    cArr[5] = new ComposedShape(tri,circ2);
+    cArr[6] = new ComposedShape(circ,tri2);
+    cArr[7] = new ComposedShape(circ,rect2);
+    cArr[8] = new ComposedShape(circ,circ2);
+  
+   for(int j=0; j<9; j++){
+       file.open(FileName(\"ComposedShape \").c_str());
+       file<<*cArr[j];
+       file.close();
+   }
+    cout<<endl<<endl;
+    //convertAll Function Testing
+    cout<<\"********* Using convertAll Function *********\"<<endl;
+    Rectangle * shape1 = new Rectangle(13,5);
+    Triangle * shape2 = new Triangle(50);
+    ComposedShape *c = new ComposedShape(shape2,shape1);
+    cout<<\"vector<Shape*>'s coordXs and coordYs : \"<<endl;
+    for(int i=0; i<c->getShapesVect().size(); ++i)
+        cout<<\"v[\"<<i<<\"]'s coordX= \"<<c->getShapesVect()[i]->getCoordX()<<\" v[\"<<i<<\"]'s coordY= \"<<c->getShapesVect()[i]->getCoordY()<<endl;
+    vector<Polygon*> p = convertAll(c->getShapesVect());
+    cout<<endl;
+    cout<<\"After convert from vector<Shape*> to vector<Polygon*>\"<<endl<<endl;
+    cout<<\"vector<Polygon*>'s coordXs and coordYs : \"<<endl;
+    for(int i=0; i<p.size(); ++i)
+        cout<<\"p[\"<<i<<\"]'s coordX= \"<<p[i]->getCoordX()<<\" p[\"<<i<<\"]'s coordY= \"<<p[i]->getCoordY()<<endl;
+    cout<<endl<<endl;
+    
+    //printPoly Function Testing
+    Circle * s1 = new Circle(25);
+    Rectangle * s2 = new Rectangle(250,100);
+    Rectangle * s3 = new Rectangle(13,5);
+    Triangle * s4 = new Triangle(500);
+    ComposedShape *c1 = new ComposedShape(s2,s1);
+    ComposedShape *c2 = new ComposedShape(s4,s3);
+    file.open(FileName(\"printPolyTesting with PolygonDyn \").c_str());
+    printPoly((c1->getShapesVect()),file,true);
+    file.close();
+    file.open(FileName(\"printPolyTesting with PolygonVect \").c_str());
+    printPoly((c2->getShapesVect()),file,false);
+    file.close();
+    
+    
+    //SortAll Function Testing
+    cout<<\"********* Using sortAll Function *********\"<<endl<<endl;
+    Shape * ss1 = new Rectangle(10,5);
+    Shape * ss2 = new Rectangle(9,5);
+    Shape * ss3 = new Rectangle(8,5);
+    Shape * ss4 = new Rectangle(7,5);
+    vector<Shape*> s;
+    s.push_back(ss1); 
+    s.push_back(ss2);
+    s.push_back(ss3); 
+    s.push_back(ss4);
+    
+    for(int i=0; i<s.size(); ++i)
+    cout<<\"s[\"<<i<<\"]'s Area = \"<<s[i]->area()<<\" \";
+    sortAll(&s);
+    cout<<endl<<\"After sort..\"<<endl;
+    for(int i=0; i<s.size(); ++i)
+        cout<<\"s[\"<<i<<\"]'s Area = \"<<s[i]->area()<<\" \";
+    cout<<endl<<endl;
+    
+    //Exception Testing
+    PolygonDyn test(1,2);
+    test[-2];
+    PolygonVect test2(1,2);
+    test[-3];
+    }
+    catch(IndexOutOfRangeException& a){ 
+        cerr<<\"Exception Test : \"<<a.what()<<endl;
+    }
+    return 0;
+}
+"
+      associated_elems
+      end
+    end
+  end
+
+  package_ref 128130 // PolygonNameSpace
+
+  package_ref 128258 // polyDyn
+
+  package_ref 128386 // polyVect
+end

@@ -1,0 +1,8 @@
+window_sizes 1920 1001 568 1346 947 0
+
+show_stereotypes
+selected classdiagram_ref 128002 // hw7_diagram
+open
+  classview_ref 128002 // src
+end
+end

@@ -1,0 +1,402 @@
+format 221
+"PolygonNameSpace" // 161044068_CSE241_HW5::PolygonNameSpace
+  revision 1
+  modified_by 2 "zeyne"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "C:/Users/zeyne/Desktop/161044068_CSE241_HW5/"
+  cpp_src_dir "C:/Users/zeyne/Desktop/161044068_CSE241_HW5/"
+  cpp_namespace "PolygonNameSpace"
+  classview 128130 "161044068_CSE241_HW5"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 128898 "Polygon"
+      abstract visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 129410 // <generalisation>
+	relation 129410 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 129410 // <generalisation>
+	  b parent class_ref 128130 // Shape
+      end
+
+      operation 130690 "Polygon"
+	cpp_inline public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract} {};
+"
+	
+	
+	
+	
+      end
+
+      class 129026 "Point2D"
+	visibility package 
+	cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	operation 130818 "Point2D"
+	  cpp_inline public explicit_return_type ""
+	  nparams 0
+	  cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract} :x(0),y(0){};
+"
+	  
+	  
+	  
+	  
+	end
+
+	operation 130946 "getCoordX"
+	  const cpp_inline public explicit_return_type "double"
+	  nparams 0
+	  cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return x; };
+"
+	  
+	  
+	  
+	  
+	end
+
+	operation 131074 "getCoordY"
+	  const cpp_inline public explicit_return_type "double"
+	  nparams 0
+	  cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return y; };
+"
+	  
+	  
+	  
+	  
+	end
+
+	operation 131202 "setCoordX"
+	  cpp_inline public explicit_return_type "void"
+	  nparams 1
+	    param in name "CoordX" explicit_type "double"
+	  cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+                x=CoordX;
+            };
+"
+	  
+	  
+	  
+	  
+	end
+
+	operation 131330 "setCoordY"
+	  cpp_inline public explicit_return_type "void"
+	  nparams 1
+	    param in name "CoordY" explicit_type "double"
+	  cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+                y=CoordY;
+            };
+"
+	  
+	  
+	  
+	  
+	end
+
+	operation 131458 "setCoord"
+	  cpp_inline public explicit_return_type "void"
+	  nparams 2
+	    param in name "CoordX" explicit_type "double"
+	    param in name "CoordY" explicit_type "double"
+	  cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract} {
+                x=CoordX;
+                y=CoordY;
+            };
+"
+	  
+	  
+	  
+	  
+	end
+
+	attribute 128002 "x"
+	  private explicit_type "double"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	attribute 128130 "y"
+	  private explicit_type "double"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+      end
+
+      operation 131586 "setCoord2"
+	cpp_inline public explicit_return_type "void"
+	nparams 2
+	  param in name "coordX" explicit_type "double"
+	  param in name "coordY" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract} {
+                x2=coordX;y2=coordY;
+        };
+"
+	
+	
+	
+	
+      end
+
+      operation 131714 "setCoord3"
+	cpp_inline public explicit_return_type "void"
+	nparams 2
+	  param in name "coordX" explicit_type "double"
+	  param in name "coordY" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract} {
+                x3=coordX;y3=coordY;
+        };
+"
+	
+	
+	
+	
+      end
+
+      operation 131842 "setHeight"
+	cpp_inline public explicit_return_type "void"
+	nparams 1
+	  param in name "height" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract} { h=height;};
+"
+	
+	
+	
+	
+      end
+
+      operation 131970 "getHeight"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return h; };
+"
+	
+	
+	
+	
+      end
+
+      operation 132098 "getCoordX2"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return x2; };
+"
+	
+	
+	
+	
+      end
+
+      operation 132226 "getCoordY2"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return y2; };
+"
+	
+	
+	
+	
+      end
+
+      operation 132354 "getCoordX3"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return x3; };
+"
+	
+	
+	
+	
+      end
+
+      operation 132482 "getCoordY3"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} { return y3; };
+"
+	
+	
+	
+	
+      end
+
+      operation 132610 "printPolygon"
+	abstract cpp_virtual public explicit_return_type "void"
+	nparams 2
+	  param inout name "out" explicit_type "ostream"
+	  param in name "v" explicit_type "vector<Shape*>"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      attribute 128258 "h"
+	private explicit_type "int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128386 "x2"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128514 "x3"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128642 "y2"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128770 "y3"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+  end
+
+  deploymentview 128130 "PolygonNameSpace"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 128386 "Polygon"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128898 // Polygon
+      end
+    end
+  end
+end

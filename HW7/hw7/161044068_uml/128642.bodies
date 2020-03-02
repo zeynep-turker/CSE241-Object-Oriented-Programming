@@ -1,0 +1,63 @@
+class Rectangle
+!!!139138.java!!!	Rectangle()
+		this(100,50);
+!!!139266.java!!!	Rectangle(in width : int, in height : int)
+		if(width < 0 || height < 0)
+			throw new IllegalArgumentException();
+		this.width = width;
+		this.height = height;	
+!!!139394.java!!!	Rectangle(in width : int, in height : int, in coordx : double, in coordy : double)
+		if(width < 0 || height < 0 || coordx < 0 || coordy < 0)
+			throw new IllegalArgumentException();
+		this.width = width;
+		this.height = height;
+		this.coordx = coordx;
+		this.coordy = coordy;
+!!!139522.java!!!	getHeight() : int
+ return height;
+!!!139650.java!!!	getWidth() : int
+ return width;
+!!!139778.java!!!	getCoordx() : double
+ return coordx;
+!!!139906.java!!!	getCoordy() : double
+ return coordy;
+!!!140034.java!!!	setHeight(in height : int) : void
+		if(height < 0)
+			throw  new IllegalArgumentException();
+		this.height = height; 
+!!!140162.java!!!	setWidth(in width : int) : void
+		if(width < 0)
+			throw new IllegalArgumentException();
+		this.width = width; 
+!!!140290.java!!!	setCoordx(in coordx : double) : void
+		if(coordx < 0)
+			throw new IllegalArgumentException();
+		this.coordx = coordx;
+!!!140418.java!!!	setCoordy(in coordy : double) : void
+		if(coordy < 0)
+			throw new IllegalArgumentException();
+		this.coordy = coordy; 
+!!!140546.java!!!	setCoord(in coordx : double, in coordy : double) : void
+		if(coordx < 0 || coordy < 0)
+			throw new IllegalArgumentException();
+		this.coordx = coordx; 
+		this.coordy = coordy; 
+!!!140674.java!!!	area() : double
+		return ((double)(this.getWidth() * this.getHeight()));
+!!!140802.java!!!	perimeter() : double
+		return ((double)((2.0*this.getWidth()) + (2.0*this.getHeight())));
+!!!140930.java!!!	increment() : void
+		this.coordx = this.coordx + 1.0;
+		this.coordy = this.coordy + 1.0;
+!!!141058.java!!!	decrement() : void
+		this.coordx = this.coordx - 1.0;
+		this.coordy = this.coordy - 1.0;	
+!!!141186.java!!!	Draw(inout draw : Graphics) : void
+		draw.fillRect((int)coordx, (int)coordy, width, height);
+!!!141314.java!!!	compareTo(inout o : Shape) : int
+		if(this.area() == o.area())
+			return 0;
+		else if(this.area() > o.area())
+			return 1;
+		else
+			return -1;

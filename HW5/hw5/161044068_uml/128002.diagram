@@ -1,0 +1,122 @@
+format 221
+
+classcanvas 128002 class_ref 128130 // Shape
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  color lightmagenta
+  xyz 483 36 2000
+end
+classcanvas 128130 class_ref 128002 // Circle
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  color lightmagenta
+  xyz 481 602 2006
+end
+classcanvas 128386 class_ref 128514 // Triangle
+  classdiagramsettings show_members_full_definition no show_members_visibility yes member_max_width 0 show_parameter_dir no show_parameter_name no end
+  color lightmagenta
+  xyz 33 367 2006
+end
+classcanvas 128642 class_ref 128386 // Rectangle
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  color lightmagenta
+  xyz 231 559 2006
+end
+classcanvas 128898 class_ref 128258 // ComposedShape
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  color lightmagenta
+  xyz 719 397 2012
+end
+classcanvas 130562 class_ref 129154 // PolygonDyn
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  color lightmagenta
+  xyz 1012 361 2000
+end
+classcanvas 130690 class_ref 129282 // PolygonVect
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  color lightmagenta
+  xyzwh 1310 440 2000 109 213
+end
+classcanvas 130818 class_ref 128898 // Polygon
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  color lightmagenta
+  xyz 1167 109 2006
+end
+classcanvas 132098 class_ref 128642 // IndexOutOfRangeException
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  color lightmagenta
+  xyz 130 142 2000
+end
+relationcanvas 128258 relation_ref 128002 // <generalisation>
+  from ref 128130 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 129922 // <generalisation>
+  from ref 128386 z 2007 to point 132 368
+  line 131330 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 129794 // <generalisation>
+  from ref 128642 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129026 relation_ref 128130 // <generalisation>
+  from ref 128898 z 2013 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129154 relation_ref 128258 // <unidirectional association>
+  decenter_end 307
+  from ref 128898 z 2013 to ref 128642
+  role_a_pos 333 595 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129282 relation_ref 128386 // <unidirectional association>
+  from ref 128898 z 2013 to ref 128642
+  role_a_pos 333 619 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129410 relation_ref 128514 // <unidirectional association>
+  from ref 128898 z 2013 to ref 128130
+  role_a_pos 579 623 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129538 relation_ref 128642 // <unidirectional association>
+  decenter_end 523
+  from ref 128898 z 2013 to ref 128130
+  role_a_pos 579 649 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129666 relation_ref 128770 // <unidirectional association>
+  from ref 128898 z 2013 to point 133 520
+  line 131714 z 2013 to ref 128386
+  role_a_pos 144 501 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129794 relation_ref 128898 // <unidirectional association>
+  from ref 128898 z 2013 to ref 128386
+  role_a_pos 145 537 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129922 relation_ref 129026 // <unidirectional association>
+  from ref 128898 z 2013 stereotype "<<vector>>" xyz 592 300.5 2013 to ref 128002
+  role_a_pos 641 300 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130946 relation_ref 129410 // <generalisation>
+  from ref 130818 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131074 relation_ref 129538 // <generalisation>
+  from ref 130562 z 2007 to ref 130818
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131202 relation_ref 129666 // <generalisation>
+  from ref 130690 z 2007 to ref 130818
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

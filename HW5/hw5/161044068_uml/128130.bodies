@@ -1,0 +1,28 @@
+class Shape
+!!!137218.cpp!!!	setSize(in size : int) : void
+    line=size;
+!!!137346.cpp!!!	setCoordX(in coordX : double) : void
+    coordx=coordX;
+!!!137474.cpp!!!	setCoordY(in coordY : double) : void
+    coordy=coordY;
+!!!137602.cpp!!!	setCoord1(in coordX : double, in coordY : double) : void
+    coordx=coordX;
+    coordy=coordY;
+!!!138370.cpp!!!	operator ++() : Shape
+    this->setCoord1(this->getCoordX()+1,this->getCoordY()+1);
+    return *this;
+!!!138498.cpp!!!	operator ++(in temp : int) : Shape
+    Shape &newShape = *this;
+    this->setCoord1(this->getCoordX()+1,this->getCoordY()+1); 
+    return newShape;
+!!!138626.cpp!!!	operator --() : Shape
+    this->setCoord1(this->getCoordX()-1,this->getCoordY()-1); 
+    return *this;
+!!!138754.cpp!!!	operator --(in temp : int) : Shape
+    Shape &newShape = *this;
+    this->setCoord1(this->getCoordX()-1,this->getCoordY()-1);  
+    return newShape;
+!!!138882.cpp!!!	operator ==(in otherShape : Shape) : bool
+    return (this->area() == otherShape.area());
+!!!139010.cpp!!!	operator !=(in otherShape : Shape) : bool
+    return (this->area() != otherShape.area());

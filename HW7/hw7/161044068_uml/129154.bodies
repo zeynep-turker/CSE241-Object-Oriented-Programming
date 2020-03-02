@@ -1,0 +1,20 @@
+class Point2D
+!!!133762.java!!!	Point2D()
+ x=0; y=0;
+!!!133890.java!!!	getCoordX() : double
+ return x;
+!!!134018.java!!!	getCoordY() : double
+ return y;
+!!!134146.java!!!	setCoordX(in CoordX : double) : void
+				if(CoordX < 0)
+					throw new IllegalArgumentException();
+				x=CoordX;
+!!!134274.java!!!	setCoordY(in CoordY : double) : void
+				if(CoordY < 0)
+					throw new IllegalArgumentException();
+				y=CoordY;
+!!!134402.java!!!	setCoord(in CoordX : double, in CoordY : double) : void
+				if(CoordX < 0 || CoordY < 0)
+					throw new IllegalArgumentException();
+				x=CoordX;
+				y=CoordY;

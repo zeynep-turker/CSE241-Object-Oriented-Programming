@@ -1,0 +1,45 @@
+class Triangle
+!!!139522.cpp!!!	Triangle(in line : int, in x1 : double, in y1 : double, in x2 : double, in y2 : double, in x3 : double, in y3 : double)
+    coordx2=x2;
+    coordy2=y2;
+    coordx3=x3;
+    coordy3=y3;
+!!!139650.cpp!!!	setCoord2(in coordX : double, in coordY : double) : void
+    coordx2=coordX;
+    coordy2=coordY;
+!!!139778.cpp!!!	setCoord3(in coordX : double, in coordY : double) : void
+    coordx3=coordX;
+    coordy3=coordY;
+!!!140674.cpp!!!	print(inout out : ostream, in a : int) : void
+    if(a == 1){
+    out<<"<polygon points=\""<<this->getCoordX()<<","<<this->getCoordY()<<" "
+        <<this->getCoordX2()<<","<<this->getCoordY2()<<" "<<this->getCoordX3()
+	<<","<<this->getCoordY3()<<"\" "<<"fill=\"green\"/>";
+    }
+    else{
+        out<<"<polygon points=\""<<this->getCoordX()<<","<<this->getCoordY()<<" "
+        <<this->getCoordX2()<<","<<this->getCoordY2()<<" "<<this->getCoordX3()
+	<<","<<this->getCoordY3()<<"\" "<<"fill=\"red\"/>";
+    }
+!!!140802.cpp!!!	operator ++() : Shape
+    this->setCoord1(this->getCoordX()+1,this->getCoordY()+1);
+    this->setCoord2(coordx2+1,coordy2+1);
+    this->setCoord3(coordx3+1,coordy3+1); 
+    return *this;
+!!!140930.cpp!!!	operator ++(in temp : int) : Shape
+    Shape &newShape = *this;
+    this->setCoord1(this->getCoordX()+1,this->getCoordY()+1);
+    this->setCoord2(coordx2+1,coordy2+1);
+    this->setCoord3(coordx3+1,coordy3+1); 
+    return newShape;
+!!!141058.cpp!!!	operator --() : Shape
+    this->setCoord1(this->getCoordX()-1,this->getCoordY()-1);
+    this->setCoord2(coordx2-1,coordy2-1);
+    this->setCoord3(coordx3-1,coordy3-1);
+    return *this;
+!!!141186.cpp!!!	operator --(in temp : int) : Shape
+    Shape &newShape = *this;
+    this->setCoord1(this->getCoordX()-1,this->getCoordY()-1);
+    this->setCoord2(coordx2-1,coordy2-1);
+    this->setCoord3(coordx3-1,coordy3-1);
+    return newShape;

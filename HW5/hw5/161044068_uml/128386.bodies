@@ -1,0 +1,12 @@
+class Rectangle
+!!!136194.cpp!!!	setHeight(in h : int) : void
+    height=h;
+!!!136706.cpp!!!	print(inout out : ostream, in a : int) : void
+    if(a == 1){
+        out<<"<rect x=\""<<this->getCoordX()<<"\" "<<"y=\""<<this->getCoordY()<<"\" width=\""
+            <<this->getSize()<<"\" height=\""<<this->getHeight()<<"\" "<<"fill=\"green\" />"; 
+    }
+    else{
+        out<<"<rect x=\""<<this->getCoordX()<<"\" "<<"y=\""<<this->getCoordY()<<"\" width=\""
+            <<this->getSize()<<"\" height=\""<<this->getHeight()<<"\" "<<"fill=\"red\" />"; 
+    }

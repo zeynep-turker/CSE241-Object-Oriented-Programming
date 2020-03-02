@@ -1,0 +1,42 @@
+class Polygon
+!!!134530.java!!!	setCoord1(in coordX : double, in coordY : double) : void
+			if(coordX < 0 || coordY < 0)
+				throw new IllegalArgumentException();
+	     	x1=coordX;
+	     	y1=coordY;
+!!!134658.java!!!	setCoord2(in coordX : double, in coordY : double) : void
+		if(coordX < 0 || coordY < 0)
+			throw new IllegalArgumentException();
+     	x2=coordX;
+     	y2=coordY;
+!!!134786.java!!!	setCoord3(in coordX : double, in coordY : double) : void
+		if(coordX < 0 || coordY < 0)
+			throw new IllegalArgumentException();
+     	x3=coordX;
+     	y3=coordY;
+!!!134914.java!!!	setHeight(in height : int) : void
+    	if(height < 0)
+    		throw new IllegalArgumentException();
+    	h=height;
+!!!135042.java!!!	setWidth(in width : int) : void
+    	if(width < 0)
+    		throw new IllegalArgumentException();
+    	w=width;
+!!!135170.java!!!	getWidth() : double
+ return w;
+!!!135298.java!!!	getHeight() : double
+ return h;
+!!!135426.java!!!	getCoordX1() : double
+ return x1;
+!!!135554.java!!!	getCoordY1() : double
+ return y1;
+!!!135682.java!!!	getCoordX2() : double
+ return x2;
+!!!135810.java!!!	getCoordY2() : double
+ return y2;
+!!!135938.java!!!	getCoordX3() : double
+ return x3;
+!!!136066.java!!!	getCoordY3() : double
+ return y3;
+!!!136578.java!!!	compareTo(inout o : Shape) : int
+ return 0;

@@ -1,0 +1,76 @@
+class Triangle
+!!!141442.java!!!	Triangle()
+		this(50);
+!!!141570.java!!!	Triangle(in size : int)
+		if(size < 0)
+			throw new IllegalArgumentException();
+		this.line = size;
+!!!141698.java!!!	Triangle(in size : int, in coordx1 : double, in coordy1 : double, in coordx2 : double, in coordy2 : double, in coordx3 : double, in coordy3 : double)
+		if(size<0 || coordx1<0 || coordy1<0 || coordx2<0 || coordy2<0 || coordx3<0 || coordy3<0)
+			throw new IllegalArgumentException();
+		this.line = size; 
+		this.coordx1 = coordx1; this.coordy1 = coordy1; 
+		this.coordx2 = coordx2; this.coordy2 = coordy2;
+		this.coordx3 = coordx3; this.coordy3 = coordy3;
+!!!141826.java!!!	getSize() : int
+ return line;
+!!!141954.java!!!	getCoordx1() : double
+ return coordx1;
+!!!142082.java!!!	getCoordx2() : double
+ return coordx2;
+!!!142210.java!!!	getCoordx3() : double
+ return coordx3;
+!!!142338.java!!!	getCoordy1() : double
+ return coordy1;
+!!!142466.java!!!	getCoordy2() : double
+ return coordy2;
+!!!142594.java!!!	getCoordy3() : double
+ return coordy3;
+!!!142722.java!!!	setSize(in line : int) : void
+		if(line < 0)
+			throw new IllegalArgumentException();
+		this.line = line; 
+!!!142850.java!!!	setCoord1(in coordx : double, in coordy : double) : void
+		if(coordx < 0 || coordy < 0)
+			throw new IllegalArgumentException();
+		this.coordx1 = coordx;
+		this.coordy1 = coordy;
+!!!142978.java!!!	setCoord2(in coordx : double, in coordy : double) : void
+		if(coordx < 0 || coordy < 0)
+			throw new IllegalArgumentException();
+		this.coordx2 = coordx;
+		this.coordy2 = coordy;
+!!!143106.java!!!	setCoord3(in coordx : double, in coordy : double) : void
+		if(coordx < 0 || coordy < 0)
+			throw new IllegalArgumentException();
+		this.coordx3 = coordx;
+		this.coordy3 = coordy;
+!!!143234.java!!!	area() : double
+		return ((double)(this.getSize() * this.getSize()) * Math.sqrt(3.0)/4.0);
+!!!143362.java!!!	perimeter() : double
+		return (3.0 * (double)(this.getSize()));
+!!!143490.java!!!	increment() : void
+		this.coordx1 = this.coordx1 + 1.0;
+		this.coordy1 = this.coordy1 + 1.0;
+		this.coordx2 = this.coordx2 + 1.0;
+		this.coordy2 = this.coordy2 + 1.0;
+		this.coordx3 = this.coordx3 + 1.0;
+		this.coordy3 = this.coordy3 + 1.0;
+!!!143618.java!!!	decrement() : void
+		this.coordx1 = this.coordx1 - 1.0;
+		this.coordy1 = this.coordy1 - 1.0;
+		this.coordx2 = this.coordx2 - 1.0;
+		this.coordy2 = this.coordy2 - 1.0;
+		this.coordx3 = this.coordx3 - 1.0;
+		this.coordy3 = this.coordy3 - 1.0;
+!!!143746.java!!!	Draw(inout draw : Graphics) : void
+		Polygon p = new Polygon();
+		p.addPoint((int)coordx1,(int)coordy1); p.addPoint((int)coordx2,(int)coordy2); p.addPoint((int)coordx3,(int)coordy3);
+		draw.fillPolygon(p);
+!!!143874.java!!!	compareTo(inout o : Shape) : int
+		if(this.area() == o.area())
+			return 0;
+		else if(this.area() > o.area())
+			return 1;
+		else
+			return -1;

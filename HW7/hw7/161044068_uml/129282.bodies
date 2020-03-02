@@ -1,0 +1,51 @@
+class PolygonDyn
+!!!136706.java!!!	PolygonDyn()
+		used = 0;
+		capacity = 50;
+        p = new Point2D[capacity];
+!!!136834.java!!!	PolygonDyn(in num : int)
+		if(num < 0)
+			throw new IllegalArgumentException();
+		used = 0;
+		capacity = num;
+        p = new Point2D[capacity];
+!!!136962.java!!!	PolygonDyn(in x : double, in y : double)
+		used=1;
+        capacity=10;
+        p = new Point2D[capacity];
+        p[0].setCoord(x,y);
+!!!137090.java!!!	getUsed() : int
+ return used;
+!!!137218.java!!!	getCapacity() : int
+ return capacity;
+!!!137346.java!!!	getArray() : Polygon::Point2D
+ return p;
+!!!137474.java!!!	convert(inout shape : Shape) : Polygon::Point2D
+    	if(shape instanceof Rectangle){
+    		p = new Point2D[50];
+            p[0].setCoord(((Rectangle)shape).getCoordx(),((Rectangle)shape).getCoordy());
+            p[1].setCoord(((Rectangle)shape).getCoordx()+((Rectangle)shape).getWidth(),((Rectangle)shape).getCoordy());
+            p[2].setCoord(((Rectangle)shape).getCoordx()+((Rectangle)shape).getWidth(),((Rectangle)shape).getCoordy()+((Rectangle)shape).getHeight());
+            p[3].setCoord(((Rectangle)shape).getCoordx(),((Rectangle)shape).getCoordy()+((Rectangle)shape).getHeight());
+            used = 4;
+        }
+        else if(shape instanceof Circle){
+        	p = new Point2D[150];
+            used = 100;
+            for(i=0; i<100; i++){
+                angle=3.6*i*(PI/180);       
+                p[i].setCoord(((Circle)shape).getCoordx()+((Circle)shape).getSize()*Math.cos(angle),((Circle)shape).getCoordy()+((Circle)shape).getSize()*Math.sin(angle));              
+            }
+        }
+        else if(shape instanceof Triangle){
+        	p = new Point2D[50];
+            p[0].setCoord(((Triangle)shape).getCoordx1(),((Triangle)shape).getCoordy1());
+            p[1].setCoord(((Triangle)shape).getCoordx2(),((Triangle)shape).getCoordy2());
+            p[2].setCoord(((Triangle)shape).getCoordx3(),((Triangle)shape).getCoordy3());
+            used = 3;
+        }
+    	return p;
+!!!137602.java!!!	area() : double
+return 0;
+!!!137730.java!!!	perimeter() : double
+return 0;

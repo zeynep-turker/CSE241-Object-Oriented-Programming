@@ -1,0 +1,85 @@
+format 221
+
+classcanvas 128002 class_ref 128002 // Circle
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  xyz 601.276 274.572 2000
+end
+classcanvas 128130 class_ref 128130 // Shape
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  xyz 470.4 39.24 2006
+end
+classcanvas 128386 class_ref 128386 // ComposedShape
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  xyz 71.32 5.76 2012
+end
+classcanvas 129026 class_ref 128642 // Rectangle
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  xyz 464.64 242.56 2012
+end
+classcanvas 129282 class_ref 128770 // Triangle
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  xyz 316.4 159.32 2012
+end
+classcanvas 129538 class_ref 129026 // Polygon
+  classdiagramsettings hide_operations no hide_getset_operations no hide_ports yes show_members_visibility yes show_members_stereotype yes show_members_context uml show_members_multiplicity no show_members_initialization yes show_attribute_modifiers yes member_max_width 0 show_parameter_dir yes show_parameter_name yes drawing_language java show_context_mode no show_infonote no show_stereotype_properties yes end
+  xyz 834.4 14.16 2018
+end
+classcanvas 129794 class_ref 129282 // PolygonDyn
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  xyz 1115.12 271.44 2024
+end
+classcanvas 130050 class_ref 129410 // PolygonVect
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  xyz 1106.2 16.88 2024
+end
+relationcanvas 128258 relation_ref 128130 // <realization>
+  from ref 128002 z 2007 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 128386 // <realization>
+  from ref 128386 z 2013 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128642 relation_ref 128514 // <unidirectional association>
+  from ref 128386 z 2013 to ref 128130
+  role_a_pos 389 110 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 128642 // <unidirectional association>
+  from ref 128386 z 2013 to ref 128130
+  role_a_pos 349 120 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128898 relation_ref 128770 // <unidirectional association>
+  from ref 128386 z 2013 stereotype "<<ArrayList>>" xyz 243 127 2013 to ref 128130
+  role_a_pos 266 141 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129154 relation_ref 130178 // <realization>
+  from ref 129026 z 2013 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129410 relation_ref 130306 // <realization>
+  from ref 129282 z 2013 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129666 relation_ref 128898 // <realization>
+  from ref 129538 z 2019 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129922 relation_ref 129026 // <generalisation>
+  from ref 129794 z 2025 to ref 129538
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130178 relation_ref 129282 // <generalisation>
+  from ref 130050 z 2025 to ref 129538
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

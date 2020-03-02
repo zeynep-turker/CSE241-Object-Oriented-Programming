@@ -1,0 +1,54 @@
+class Circle
+!!!128642.java!!!	Circle()
+		this(100);
+!!!128770.java!!!	Circle(in size : int)
+		if(size < 0)
+			throw new IllegalArgumentException();
+		this.line = size;	
+!!!128898.java!!!	Circle(in size : int, in coordx : double, in coordy : double)
+		if(size < 0 || coordx < 0 || coordy < 0)
+			throw new IllegalArgumentException();
+		this.line = size;
+		this.coordx = coordx;
+		this.coordy = coordy;
+!!!129026.java!!!	getSize() : int
+ return line;
+!!!129154.java!!!	getCoordx() : double
+ return coordx;
+!!!129282.java!!!	getCoordy() : double
+ return coordy;
+!!!129410.java!!!	setSize(in size : int) : void
+		if(size < 0)
+			throw new IllegalArgumentException();
+		this.line = size; 
+!!!129538.java!!!	setCoordx(in coordx : double) : void
+		if(coordx < 0)
+			throw new IllegalArgumentException();
+		this.coordx = coordx; 
+!!!129666.java!!!	setCoordy(in coordy : double) : void
+		if(coordy < 0)
+			throw new IllegalArgumentException();
+		this.coordy = coordy; 
+!!!129794.java!!!	setCoord(in coordx : double, in coordy : double) : void
+		if(coordx < 0 || coordy < 0)
+			throw new IllegalArgumentException();
+		this.coordx = coordx; this.coordy = coordy; 
+!!!129922.java!!!	area() : double
+		return PI *(double)(this.getSize() * this.getSize());
+!!!130050.java!!!	perimeter() : double
+		return 2 * PI * this.getSize();
+!!!130178.java!!!	increment() : void
+		this.coordx = this.coordx + 1.0;
+		this.coordy = this.coordy + 1.0;
+!!!130306.java!!!	decrement() : void
+		this.coordx = this.coordx - 1.0;
+		this.coordy = this.coordy - 1.0;	
+!!!130434.java!!!	Draw(inout draw : Graphics) : void
+		draw.fillOval((int)coordx, (int)coordy, line, line);
+!!!130562.java!!!	compareTo(inout o : Shape) : int
+		if(this.area() == o.area())
+			return 0;
+		else if(this.area() > o.area())
+			return 1;
+		else
+			return -1;

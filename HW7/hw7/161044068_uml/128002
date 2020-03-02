@@ -1,0 +1,35 @@
+format 221
+"161044068_CSE241_HW7" // 161044068_CSE241_HW7
+  revision 1
+  modified_by 2 "zeyne"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "C:/Users/zeyne/Desktop/161044068_CSE241_HW7/"
+  package_ref 128130 // src
+end
